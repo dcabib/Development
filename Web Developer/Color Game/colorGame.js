@@ -16,27 +16,25 @@ var resetButton = document.querySelector("#resetButton");
 var easyButton = document.querySelector("#easyButton");
 var hardButton = document.querySelector("#hardButton");
 
+// Global Variables for the Game
 var numberOfSquares = 6; // Default number of squares
-
 var colors = generateRandomColors (numberOfSquares);
-
 var pickedColor = pickColor();
 
+// Define the target color to be discovered
 colorDisplay.textContent = pickedColor;
 
+// Filling out the squares with colors
 for (var i=0; i<squares.length; i++)
 {
 	// add initial colors to squares
 	squares[i].style.background = colors[i];
 
-	// aad click listeners to squares
-	squares[i].addEventListener ("click", function(){
-		console.log("evento de click em um quadrado quadrados...");
-
+	// aad events listeners to squares  - CLICK
+	squares[i].addEventListener ("click", function()
+	{
+		// Witch color was selected?
 		var clicleckColor = this.style.background;
-
-		console.log("clicleckColor:" + clicleckColor);
-		console.log("pickedColor:" + pickedColor);
 
 		if (clicleckColor === pickedColor)
 		{

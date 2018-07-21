@@ -59,7 +59,7 @@ button:hover
 	padding-bottom: 30%;
 	float: left;
 	border-radius: 15%;
-	transition: background 2.6s;
+	transition: background 0.6s;
 }
 
 #container 
