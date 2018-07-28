@@ -1,0 +1,12 @@
+<% include partials/header.ejs%>
+
+<h1>You fell in loive with: <%=thingVar.toUpperCase() %> </h1>
+
+<% if (thingVar.toLowerCase() == "timao"){ %>
+<p>Timao eh o melhor do mundo</p>
+<%} else { %>
+<p>Pessima escolha: Voce deveria ter dito Timao</p>
+<% }%>
+<p>P.S. this is ejs file</p>
+
+<% include partials/footer.ejs%>
